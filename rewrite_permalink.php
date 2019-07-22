@@ -1,3 +1,4 @@
+<?php
 /**
  * Function: eg_add_rewrite_rules
  * Change url by new rules
