@@ -1,3 +1,4 @@
+<?php
 /**
  * Function: add_opengraph_doctype
  * Adding the Open Graph in the Language Attributes
