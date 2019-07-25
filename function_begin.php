@@ -118,8 +118,7 @@ function theme_option_setup() {
 	/**
 	 * Filters Theme array of starter content.
 	 *
-	 * @since Theme 
-   1.1
+	 * @since Theme 1.1
 	 *
 	 * @param array $starter_content Array of starter content.
 	 */
