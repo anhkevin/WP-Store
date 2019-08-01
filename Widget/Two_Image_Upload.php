@@ -89,6 +89,28 @@ add_action('admin_enqueue_scripts', 'ctup_wdscript');
 function ctup_wdscript() {
     wp_enqueue_media();
     wp_enqueue_script('ads_script', get_template_directory_uri() . '/assets/js/widget.js', false, '1.0.0', true);
+	
+// 	jQuery(document).ready(function ($) {
+//     function media_upload(button_selector) {
+//       var _custom_media = true,
+//           _orig_send_attachment = wp.media.editor.send.attachment;
+//       $('body').on('click', button_selector, function () {
+//         var button_id = $(this).attr('id');
+//         wp.media.editor.send.attachment = function (props, attachment) {
+//           if (_custom_media) {
+//             $('.' + button_id + '_img').attr('src', attachment.url);
+//             $('.' + button_id + '_url').val(attachment.url).change();
+//           } else {
+//             return _orig_send_attachment.apply($('#' + button_id), [props, attachment]);
+//           }
+//         }
+//         wp.media.editor.open($('#' + button_id));
+//         return false;
+//       });
+//     }
+//     media_upload('.js_custom_upload_media');
+// });
+	
 }
 
 /**
